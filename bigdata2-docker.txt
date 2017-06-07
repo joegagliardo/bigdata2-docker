@@ -10,7 +10,6 @@ RUN url_exists() { if curl -s --head $1 | head -n 1 | grep "HTTP/1.[01] [2].." ;
 
 USER root
 
-
 ENV HADOOP_PREFIX /usr/local/hadoop
 ENV BOOTSTRAP /etc/bootstrap.sh
 
